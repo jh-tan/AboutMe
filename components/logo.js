@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import { keyframes } from '@emotion/react'
+import { prefix } from '../config/prefix'
 
 const bounce = keyframes`
   from, 20%, 53%, 80%, to {
@@ -30,14 +31,13 @@ const LogoBox = styled.span`
   line-height: 20px;
   padding: 10px;
 
-
   img {
     animation: ${bounce} 1s ease infinite;
   }
 `
 
 const Logo = () => {
-  const logoImg = `/images/logo.png`
+  const logoImg = `${prefix}/images/icon.png`
 
   return (
     <Link href='/'>

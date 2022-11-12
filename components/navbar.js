@@ -15,21 +15,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button.js'
-
-const LinkItem = ({ href, path, children }) => {
-  const active = path === href
-  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
-  return (
-    <Link
-      href={href}
-      p={2}
-      bg={active ? 'glassTeal' : 'undefined'}
-      color={active ? '#202023' : inactiveColor}
-    >
-      {children}
-    </Link>
-  )
-}
+import LinkItem from './link-item'
 
 const Navbar = (props) => {
   const { path } = props
@@ -65,16 +51,16 @@ const Navbar = (props) => {
           flexGrow={1}
           mt={{ base: 4, nmd: 0 }}
         >
-          <LinkItem href='/experiences' path={path}>
+          <LinkItem href='#experiences' path={path}>
             Experiences
           </LinkItem>
 
-          <LinkItem href='/education' path={path}>
-            Education
+          <LinkItem href='#projects' path={path}>
+            Projects
           </LinkItem>
 
-          <LinkItem href='/projects' path={path}>
-            Projects
+          <LinkItem href='#skills' path={path}>
+            Skills
           </LinkItem>
         </Stack>
         <Box flex={1} align='right'>
@@ -88,10 +74,9 @@ const Navbar = (props) => {
                 aria-label='Options'
               />
               <MenuList>
-                <MenuItem as={Link} href='/'> About </MenuItem>
-                <MenuItem as={Link} href='experiences'> Experiences </MenuItem>
-                <MenuItem as={Link} href='education'> Education </MenuItem>
-                <MenuItem as={Link} href='/projects'> Projects </MenuItem>
+                <MenuItem as={Link} href='#experiences'> Experiences </MenuItem>
+                <MenuItem as={Link} href='#projects'> Projects </MenuItem>
+                <MenuItem as={Link} href='#skills'> Skills </MenuItem>
               </MenuList>
             </Menu>
           </Box>

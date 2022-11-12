@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
-    "build": "next build"
+    "build": "next build",
+    "export": "next export"
   },
   "keywords": [],
   "author": "Jian Hui",
@@ -19,7 +20,8 @@
     "framer-motion": "^7.6.4",
     "next": "^13.0.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "three": "^0.147.0"
   },
   "devDependencies": {
     "eslint": "^8.26.0",
