@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      NEXT_PUBLIC_BASE_PATH: /Portfolio_Website
+      NEXT_PUBLIC_BASE_PATH: /AboutMe
 
     steps:
       # https://github.com/actions/checkout
