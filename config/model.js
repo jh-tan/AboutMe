@@ -1,4 +1,5 @@
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader'
 
 export function loadGLTFModel(
   scene,
@@ -8,6 +9,11 @@ export function loadGLTFModel(
   const { receiveShadow, castShadow } = options
   return new Promise((resolve, reject) => {
     const loader = new GLTFLoader()
+    const dracoLoader = new DRACOLoader()
+    dracoLoader.setDecoderConfig({ type: 'js' })
+    dracoLoader.setDecoderPath('https://www.gstatic.com/draco/v1/decoders/');
+
+    loader.setDRACOLoader(dracoLoader)
 
     loader.load(
       glbPath,
