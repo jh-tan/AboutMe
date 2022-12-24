@@ -4,9 +4,8 @@ const workExperience = [
     Title: 'Software Engineer Intern',
     Date: '1st September 2022 - 19th January 2023',
     Description: [
-      'Make code changes to fix any found design issues in the existing codes, to meet the new requirements of our enterprise customer ',
-      'Write unit tests, integration tests and perform UAT before deploying the changes to production',
-      'Monitored and improved internal software processes'
+      'Troubleshooted and fixed any found design issues in the existing codes, to meet the new requirements of our enterprise customer',
+      'Wrote automated integration test using Selenium, unit test using JUnit and perform user acceptance testing (UAT) to ensure accurate application behavior',
     ],
   },
 ]
