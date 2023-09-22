@@ -1,5 +1,15 @@
 const workExperience = [
   {
+    Company: 'Amplify Health',
+    Title: 'Software Engineer',
+    Date: '17th Apirl 2023 - Present',
+    Description: [
+      'Contributed to the development of data capture solution with OCR engine by diagnosing and resolving reported bugs from the end user',
+      'Optimized code for improved performance, resulting in a reduction of processing time by several seconds',
+      'Interacted with the stakeholders to define project cope and requirements'
+    ],
+  },
+  {
     Company: 'ServiceRocket',
     Title: 'Software Engineer Intern',
     Date: '1st September 2022 - 19th January 2023',
