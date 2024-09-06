@@ -41,7 +41,7 @@ const Page = () => {
           <Heading as='h2' variant='page-title'>
             Tan Jian Hui
           </Heading>
-          <p>Student | Software Engineer</p>
+          <p>Software Engineer</p>
           <Box
             display='flex'
             flexDir='row'

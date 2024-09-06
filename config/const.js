@@ -5,8 +5,9 @@ const workExperience = [
     Date: '17th Apirl 2023 - Present',
     Description: [
       'Contributed to the development of data capture solution with OCR engine by diagnosing and resolving reported bugs from the end user',
-      'Optimized code for improved performance, resulting in a reduction of processing time by several seconds',
-      'Interacted with the stakeholders to define project cope and requirements'
+      'Developed proof of concept focusing on the specialty classification feature for healthcare facilities on remote server using Jupyter Notebook',
+      'Extracted and analyzed historical data to optimize processing times, identify bottlenecks, and assess system capacity',
+      'Developed automated scripts to efficiently complete tasks, resulting in reduction of manual effort and time savings'
     ],
   },
   {
